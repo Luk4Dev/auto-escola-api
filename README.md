@@ -8,8 +8,6 @@ API REST desenvolvida em Java 17 e Spring Boot para o gerenciamento de instrutor
 - Joud Jihad Jaber — RM 556482
 - Lucca Pereira Locambo De Oliveira — RM 560731
 
-> Confira se estes são os integrantes do grupo do Challenge antes de publicar o repositório.
-
 ## Tecnologias
 
 - Java 17
@@ -225,7 +223,3 @@ src/main/resources/db/migration
 - A API retorna `400` para dados inválidos, `404` para registros inexistentes e `409` para conflitos de dados únicos.
 - Não foi implementado login/autorização, pois isso não aparece como requisito nesta entrega parcial.
 - As credenciais do banco no `docker-compose.yml` são apenas para desenvolvimento local. Para implantação real, configure credenciais seguras por variáveis de ambiente.
-
-## Entrega
-
-O repositório deve ser publicado como público no GitHub. Depois de publicar, envie o link do repositório na atividade do Teams. O enunciado informa prazo de entrega em **02/11/2026** e que apenas um integrante do grupo precisa realizar o envio.
