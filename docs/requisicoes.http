@@ -1,0 +1,96 @@
+@baseUrl = http://localhost:8080
+
+### Cadastrar instrutor
+POST {{baseUrl}}/api/instrutores
+Content-Type: application/json
+
+{
+  "nome": "Carlos Oliveira",
+  "email": "carlos@autoescola.com.br",
+  "telefone": "11987654321",
+  "cnh": "12345678901",
+  "especialidade": "CARROS",
+  "endereco": {
+    "logradouro": "Rua das Flores",
+    "numero": 120,
+    "complemento": "Sala 2",
+    "bairro": "Centro",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": "01001000"
+  }
+}
+
+### Listar instrutores
+GET {{baseUrl}}/api/instrutores?page=0
+
+### Consultar instrutor por ID
+GET {{baseUrl}}/api/instrutores/1
+
+### Atualizar instrutor
+PUT {{baseUrl}}/api/instrutores/1
+Content-Type: application/json
+
+{
+  "nome": "Carlos Oliveira Atualizado",
+  "telefone": "11988887777",
+  "endereco": {
+    "logradouro": "Rua das Flores",
+    "numero": 120,
+    "complemento": "Sala 3",
+    "bairro": "Centro",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": "01001000"
+  }
+}
+
+### Inativar instrutor
+DELETE {{baseUrl}}/api/instrutores/1
+
+### Cadastrar aluno
+POST {{baseUrl}}/api/alunos
+Content-Type: application/json
+
+{
+  "nome": "Mariana Santos",
+  "email": "mariana@email.com",
+  "telefone": "11999998888",
+  "cpf": "52998224725",
+  "endereco": {
+    "logradouro": "Avenida Paulista",
+    "numero": 1000,
+    "complemento": "Apto 45",
+    "bairro": "Bela Vista",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": "01310100"
+  }
+}
+
+### Listar alunos
+GET {{baseUrl}}/api/alunos?page=0
+
+### Consultar aluno por ID
+GET {{baseUrl}}/api/alunos/1
+
+### Atualizar aluno
+PUT {{baseUrl}}/api/alunos/1
+Content-Type: application/json
+
+{
+  "nome": "Mariana Santos Atualizada",
+  "telefone": "11977776666",
+  "endereco": {
+    "logradouro": "Avenida Paulista",
+    "numero": 1000,
+    "complemento": "Apto 45",
+    "bairro": "Bela Vista",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "cep": "01310100"
+  }
+}
+
+### Excluir aluno
+DELETE {{baseUrl}}/api/alunos/1
